@@ -19,12 +19,12 @@ const index = ({ products, bannerData }) => {
         <h1>Best Selling products</h1>
         <p>Speakers of many various</p>
       </div>
-      <div className="main-container">
+      <div className="products-container">
         {products?.map((product) => (
           <Product key={product._id} product={product} />
         ))}
       </div>
-      <FooterBanner />
+      <FooterBanner bannerData={bannerData && bannerData[0]} />
     </>
   );
 };

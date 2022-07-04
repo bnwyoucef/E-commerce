@@ -13,7 +13,6 @@ import {
 const index = ({ products, bannerData }) => {
   return (
     <>
-      {console.log(products)}
       <HeroBanner bannerData={bannerData.length && bannerData[0]} />
       <div className="products-heading">
         <h1>Best Selling products</h1>
